@@ -1,10 +1,12 @@
-package com.wellingtonhenrique.calculadoramedias
+package com.wellingtonhenrique.calculadoramedias.ui
 
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
+import com.wellingtonhenrique.calculadoramedias.MainActivity
+import com.wellingtonhenrique.calculadoramedias.R
 
 class SplashActivity : AppCompatActivity() {
 

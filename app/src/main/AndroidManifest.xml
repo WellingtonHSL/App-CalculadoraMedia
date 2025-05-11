@@ -13,7 +13,10 @@
         android:theme="@style/Theme.CalculadoraMedias"
         tools:targetApi="31">
         <activity
-            android:name=".SplashActivity"
+            android:name=".ui.team.DetailMembersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.SplashActivity"
             android:exported="true"
             android:noHistory="true">
             <intent-filter>
