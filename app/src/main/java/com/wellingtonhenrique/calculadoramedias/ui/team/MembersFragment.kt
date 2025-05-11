@@ -27,6 +27,9 @@ class MembersFragment : Fragment() {
             val intent = Intent(context, DetailMembersActivity::class.java)
             intent.putExtra("title", member.title)
             intent.putExtra("name", member.name)
+            intent.putExtra("ra", member.ra)
+            intent.putExtra("course", member.course)
+            intent.putExtra("graduation", member.graduation)
             startActivity(intent)
         }
         recyclerView.addItemDecoration(
