@@ -5,72 +5,87 @@
     android:id="@+id/detailMembers"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
     tools:context=".ui.team.DetailMembersActivity">
 
-    <ImageView
-        android:id="@+id/ic_profile"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:src="@drawable/ic_profile"/>
-
-    <TextView
-        android:id="@+id/tv_name_detail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="8dp"
-        android:layout_below="@id/ic_profile"
-        android:text="Name"
-        android:textStyle="bold"
-        android:textSize="16sp"
-        android:textColor="@color/gray500"/>
-
-    <TextView
-        android:id="@+id/tv_info"
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/appBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="22dp"
-        android:layout_below="@id/tv_name_detail"
-        android:text="Informação"
-        android:textStyle="bold"
-        android:textSize="16sp"
-        android:textColor="@color/gray500"/>
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.Material3.Dark.ActionBar"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:title="Informações"
+        app:titleTextColor="@android:color/white"/>
 
-    <TextView
-        android:id="@+id/tv_ra"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_below="@id/tv_info"
-        android:text="0000000-0"
-        android:textSize="16sp"
-        android:textColor="@color/gray500"/>
+        android:layout_height="match_parent"
+        android:padding="16dp">
 
-    <TextView
-        android:id="@+id/tv_course"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_below="@id/tv_ra"
-        android:text="Curso"
-        android:textSize="16sp"
-        android:textColor="@color/gray500"/>
+        <ImageView
+            android:id="@+id/ic_profile"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_profile" />
+
+        <TextView
+            android:id="@+id/tv_name_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ic_profile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="Name"
+            android:textColor="@color/gray500"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name_detail"
+            android:layout_marginTop="22dp"
+            android:text="Informação"
+            android:textColor="@color/gray500"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_ra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_info"
+            android:layout_marginTop="8dp"
+            android:paddingStart="16dp"
+            android:text="0000000-0"
+            android:textColor="@color/gray500"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_ra"
+            android:layout_marginTop="8dp"
+            android:paddingStart="16dp"
+            android:text="Curso"
+            android:textColor="@color/gray500"
+            android:textSize="16sp" />
 
 
-    <TextView
-        android:id="@+id/tv_graduation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_below="@id/tv_course"
-        android:text="Graduação"
-        android:textSize="16sp"
-        android:textColor="@color/gray500"/>
+        <TextView
+            android:id="@+id/tv_graduation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_course"
+            android:layout_marginTop="8dp"
+            android:paddingStart="16dp"
+            android:text="Graduação"
+            android:textColor="@color/gray500"
+            android:textSize="16sp" />
+    </RelativeLayout>
 
 </RelativeLayout>

@@ -3,12 +3,21 @@ package com.wellingtonhenrique.calculadoramedias.ui.team
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.appbar.MaterialToolbar
 import com.wellingtonhenrique.calculadoramedias.R
 
 class DetailMembersActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail_members)
+
+        val toolbar = findViewById<MaterialToolbar>(R.id.appBar)
+        setSupportActionBar(toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+        toolbar.setNavigationOnClickListener {
+            finish()
+        }
 
         val name = intent.getStringExtra("name")
         val title = intent.getStringExtra("title")
