@@ -77,9 +77,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/et_note4"
             android:layout_marginTop="24dp"
-            android:backgroundTint="@color/green400"
             android:text="Calcular"
-            android:textSize="18sp"
+            android:textSize="22sp"
             android:textStyle="bold"
             app:cornerRadius="10dp" />
 

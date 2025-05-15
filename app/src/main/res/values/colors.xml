@@ -4,9 +4,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="gray400">#73808c</color>
     <color name="gray500">#1a1f24</color>
-    <color name="purple">#331273</color>
-    <color name="red">#F43636</color>
-    <color name="green200">#D7F2E3</color>
-    <color name="green400">#4CAF50</color>
+    <color name="greenlight">#3b9b62</color>
+    <color name="greenbase">#257f49</color>
+    <color name="greendark">#052914</color>
 
 </resources>

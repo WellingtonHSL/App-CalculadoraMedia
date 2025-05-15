@@ -5,8 +5,14 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple"
+    android:background="@color/white"
     tools:context=".ui.SplashActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/bg_calculator"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,14 +25,15 @@
             android:id="@+id/logo_splash"
             android:layout_width="200dp"
             android:layout_height="200dp"
-            android:src="@drawable/logo_calculadora_medias" />
+            android:layout_marginStart="25dp"
+            android:src="@drawable/logo_calculadora_medias"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:text="Calculadora de Médias"
-            android:textColor="@color/white"
+            android:textColor="@color/greenbase"
             android:textSize="32sp"
             android:textStyle="bold"/>
     </LinearLayout>
