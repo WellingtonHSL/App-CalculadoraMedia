@@ -9,6 +9,9 @@
         <item name="colorSecondary">@color/greenlight</item>
         <item name="colorSecondaryVariant">@color/greenbase</item>
         <item name="colorOnSecondary">@color/gray500</item>
+        <!--  Custom color  -->
+        <item name="colorTitle">@color/gray400</item>
+        <item name="colorDescription">@color/gray500</item>
     </style>
 
     <style name="Theme.CalculadoraMedias" parent="Base.Theme.CalculadoraMedias" />

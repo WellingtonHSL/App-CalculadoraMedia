@@ -1,7 +1,16 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.CalculadoraMedias" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <!--  Primary brand color.  -->
+        <item name="colorPrimary">@color/greenbase</item>
+        <item name="colorPrimaryVariant">@color/greendark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!--  Secondary brand color.  -->
+        <item name="colorSecondary">@color/greenlight</item>
+        <item name="colorSecondaryVariant">@color/greenbase</item>
+        <item name="colorOnSecondary">@color/gray500</item>
+        <!--  Custom color  -->
+        <item name="colorTitle">@color/gray300</item>
+        <item name="colorDescription">@color/gray200</item>
     </style>
 </resources>
