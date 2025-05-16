@@ -43,18 +43,30 @@
             android:textSize="18sp"
             android:textStyle="bold" />
 
+        <TextView
+            android:id="@+id/tv_subtext_calc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_text_calc"
+            android:text="0.0 a 10.0"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/greenlight"/>
+
         <EditText
             android:id="@+id/et_note1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/tv_text_calc"
+            android:minHeight="48dp"
+            android:layout_below="@id/tv_subtext_calc"
             android:hint="Nota 1"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"/>
 
         <EditText
             android:id="@+id/et_note2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:minHeight="48dp"
             android:layout_below="@id/et_note1"
             android:hint="Nota 2"
             android:inputType="numberDecimal" />
@@ -63,6 +75,7 @@
             android:id="@+id/et_note3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:minHeight="48dp"
             android:layout_below="@id/et_note2"
             android:hint="Nota 3"
             android:inputType="numberDecimal" />
@@ -71,6 +84,7 @@
             android:id="@+id/et_note4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:minHeight="48dp"
             android:layout_below="@id/et_note3"
             android:hint="Nota 4"
             android:inputType="numberDecimal" />

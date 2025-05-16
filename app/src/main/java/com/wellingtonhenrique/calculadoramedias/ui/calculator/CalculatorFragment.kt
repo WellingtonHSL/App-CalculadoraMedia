@@ -1,5 +1,6 @@
 package com.wellingtonhenrique.calculadoramedias.ui.calculator
 
+import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -49,7 +50,9 @@ class CalculatorFragment : Fragment() {
                     note2.text.clear()
                     note3.text.clear()
                     note4.text.clear()
-                }.show()
+                }
+                    .setActionTextColor(Color.GREEN)
+                    .show()
             } else {
                 Snackbar.make(view, "Digite notas válidas", Snackbar.LENGTH_LONG).show()
             }
